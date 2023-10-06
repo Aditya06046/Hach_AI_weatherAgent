@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        
+        <h2>Provide the requried details given below </h2>
+        <form method="post">
+            {% csrf_token %}
+            <label for="location" class="loc">Enter Location(area)</label>
+            <input type="text" name="location" id="location"><br/><br/>
+            <label for="min_temp" class="temp">Minimum Temperature</label>
+            <input type="text" name="min_temp" id=""><br/><br/>
+            <label for="max_temp" class="temp">Maximum Temperature</label>
+            <input type="text" name="max_temp" id="temp"><br/><br/>
+            <input type="submit" value="Submit">
+        </form>
+    </center>
+</body>
+</html>
